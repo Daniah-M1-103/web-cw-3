@@ -14,20 +14,83 @@
         width: 150px;
         height: 350px;
         background-color: black;
+        margin-left: auto;
+        margin-right: auto;
       }
 
-      .circle {
+       .circle {
         width: 100px;
         height: 100px;
         border-radius: 50px;
         border: 0.5px solid white;
-      }
+        position: relative;
+        z-index: 20;
+      } 
 
       /* 👇 اكتب الكود هنا */
 
-      img {
-        /* عدل على عرض الصورة */
+      .red{
+        background-color: black;
+        transition: all 1s ease-in-out;
       }
+
+      .green{
+        background-color: black;
+        transition: all 1s ease-in-out;
+      }
+
+      .yellow{
+        background-color: black;
+        transition: all 1s ease-in-out;
+      }
+
+      .red:hover{
+        background-color: orangered;
+        position: relative;
+        z-index: 100;
+      }
+
+      .green:hover{
+        background-color: green;
+      }
+
+      .yellow:hover{
+        background-color: yellow
+      }
+
+
+      /* .new{
+
+        position: relative;
+        width: 130px;
+        <img class="img" src="https://cdn.discordapp.com/attachments/790408164334895114/793528118718758922/stop.png" alt="" />
+      } */
+
+      .imgg{
+  position: relative;
+  left: 0px;
+  top: 0px;
+  z-index: 50;
+  margin-left: auto;
+  margin-right: auto;
+  width:100px ;
+}
+      
+
+
+
+
+       img {
+        /* عدل على عرض الصورة */
+       width: 250px;
+      }  
+
+      
+
+      
+
+
+
     </style>
   </head>
   <body>
@@ -36,24 +99,30 @@
     <!--            30 px غير حجم الخط الى-             -->
     <!--   (inline styling) p تلميح: ستغير خصائص عنصر   -->
     <!----------------====================---------------->
-    <p>مرحباً، أنا تمرين CSS</p>
+    <p style="color: orangered; size: 30px; text-align: center;">مرحباً، أنا تمرين CSS</p>
 
     <!-------------------المطلوب الثاني------------------->
     <!--             اجعل عرض الصورة ٢٥٠ بكسل-          -->
     <!--     فوق CSS في img تلميح: ستغير خصائص عنصر     -->
     <!----------------====================---------------->
-    <img src="./car.png" alt="" />
+    
+    <img class="img" src="./img/car.png" alt="" />
 
     <!-------------------المطلوب الثالث------------------->
     <!--  غير لون خلفية الدوائر حتى يصبح شكل اشارة مرور -->
     <!--    بحيث عند المرور بمؤشر الماوس يتغير اللون    -->
     <!-- style تلميح: ستغير خصائص الكلاسات اللي فوق داخل -->
     <!----------------====================---------------->
+    
+    
     <div class="square">
-      <div class="circle 1"></div>
-      <div class="circle 2"></div>
-      <div class="circle 3"></div>
+      <div class="circle red"> <img src="./stop.png" class="imgg" /></div>
+      <div class="circle green"></div>
+      <div class="circle yellow"></div>
     </div>
+  
+  
+
 
     <!----------------====================---------------->
     <!--                     بونص                       -->
